@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{"home" | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>{{"welcome" | translate }}</h2>
+
+  <button ion-button block (click)="changeLanguage('en')">
+    Translate to English
+    </button>
+     
+    <button ion-button block (click)="changeLanguage('de')">
+    Translate to German
+    </button>
+
+    <button ion-button block (click)="changeLanguage('zh_Hans')">
+      Translate to Chinese 
+      </button>
+</ion-content>
